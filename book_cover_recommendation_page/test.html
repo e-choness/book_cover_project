@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="css/test.css"/>
+        <script src="scripts/test.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script> 
+        d3.csv("E:\\PycharmProjects\\book_cover_revised\\book_cover_recommendation_page\\documents\\selected_books.csv", function(data) {
+            for (var i = 0; i < data.length; i++) {
+                console.log(data[i].volumeInfo.title);
+                console.log(data[i].authors);
+            }
+        });</script> -->
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="heading">Learning JavaScript</h1>
+            <p>With me</p>
+        </div>
+
+        <div class="container">
+            <p id="time">Click to Show Time</p>
+            <button onclick="ClickTitle()">Click Me to Change Title</button>
+            <button onclick="ShowDate()">Click Me to Show Time</button>
+        </div>
+
+        <div class="container_book">
+            <ul id="book_info" onload="readCsv()"></ul>
+        </div>
+    </body>
+</html>
